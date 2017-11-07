@@ -1,6 +1,6 @@
 {
   "name": "px2rem.scss",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Self adaption plugin for mobile development",
   "main": "px2rem.config.min.js",
   "scripts": {
