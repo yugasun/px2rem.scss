@@ -1,7 +1,7 @@
 {
   "name": "px2rem.scss",
   "version": "0.2.1",
-  "description": "移动端屏幕自适应插件",
+  "description": "Self adaption plugin for mobile development",
   "main": "px2rem.config.min.js",
   "scripts": {
     "build": "./node_modules/.bin/uglifyjs px2rem.config.js -c -m > px2rem.config.min.js"
