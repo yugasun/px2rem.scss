@@ -1,0 +1,6 @@
+@import "~px2rem.scss/px2rem";
+
+.logo{
+  @include px2rem(width, 400px);
+  @include px2rem(height, 400px);
+}
