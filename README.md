@@ -1,16 +1,16 @@
 # px2rem.scss
 
-移动端屏幕自适应方案
+Self adaption plugin for mobile development.
 
-## 安装
+## Install
 
 ```
 npm install px2rem.scss --save
 ```
 
-## 如何使用
+## Usage
 
-1. 在html文件 `<head>` 标签中添加 `viewport` 和  `designBaseWidth - 设计稿基准宽度`，如下：
+1. In html `<head>` tag, add `viewport` and  `designBaseWidth`,as below：
 
 ```html
 <head>
@@ -23,7 +23,7 @@ npm install px2rem.scss --save
 </head>
 ```
 
-2. 引入 `px2rem.config.min.js` 文件，
+2. import `px2rem.config.min.js` file,
 
 ```html
 <head>
@@ -33,13 +33,13 @@ npm install px2rem.scss --save
   <script>
     var designBaseWidth = 375
   </script>
-  <script src="path/to/px2rem.config.min.js"></script>
+  <script src="https://unpkg.com/px2rem.scss"></script>
 </head>
 ```
 
-> 注意：之所以在 `<head>` 标签中引入js，是因为需要在页面渲染之前，计算更新页面基准字体大小，不然页面初始化是以 `font-size:16px` 来计算rem单位的，可能重新计算后不是这个值，页面又会重新渲染。
+> Notice：this plugin need calculate the html tag base `font-size` before dom rendering,otherwise web page will initial depend on  `font-size:16px` to calculate `rem` value,this will cause page to rerender and repain.
 
-3. 在你的项目入口 scss 文件中使用的前引入 `px2rem.scss` 文件：
+3. Before you use `mixins` in `px2rem.scss`, plz import firstly：
 
 ```scss
 @import 'path/to/px2rem.scss';
@@ -50,16 +50,16 @@ html {
 }
 ```
 
-## 补充说明
+## Remarks
 
-`px2rem.scss` 文件中主要提供您两个 [sass mixin指令](http://sass.bootcss.com/docs/sass-reference/#mixins)：
+`px2rem.scss` provide two [sass mixin](http://sass.bootcss.com/docs/sass-reference/#mixins)：
 
 ```
-font-dpr - 动态设置字体大小
-px2rem - 转换px单位为rem
+font-dpr - calculate font size
+px2rem - convert px to rem
 ```
 
-> 注意：默认计算 `rem` 单位的 html 基准字体大小为 `16px`
+> Notice：The default base font size is `16px` for html.
 
 ## License
 
