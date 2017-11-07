@@ -1,7 +1,7 @@
 # px2rem.scss
 
-<a href="https://www.npmjs.com/package/vue-axios-plugin"><img src="https://img.shields.io/npm/dm/vue-axios-plugin.svg" alt="Downloads"></a>
-<a href="https://www.npmjs.com/package/vue-axios-plugin"><img src="https://img.shields.io/npm/v/vue-axios-plugin.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/px2rem.scss"><img src="https://img.shields.io/npm/dm/px2rem.scss.svg" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/px2rem.scss"><img src="https://img.shields.io/npm/v/px2rem.scss.svg" alt="Version"></a>
 
 Self adaption plugin for mobile development.
 
