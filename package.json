@@ -1,0 +1,25 @@
+{
+  "name": "px2rem.scss",
+  "version": "0.1.0",
+  "description": "移动端屏幕自适应插件",
+  "main": "px2rem.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yugasun/px2rem.scss.git"
+  },
+  "keywords": [
+    "mobile",
+    "self-adaption",
+    "px2rem",
+    "rem"
+  ],
+  "author": "yugasun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yugasun/px2rem.scss/issues"
+  },
+  "homepage": "https://github.com/yugasun/px2rem.scss#readme"
+}

@@ -1,0 +1,37 @@
+@mixin font-dpr($font-size) {
+  font-size: $font-size / 2;
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size;
+  }
+}
+
+@mixin px2rem($property, $px-values, $baseline-px:16px, $support-for-ie:false) {
+  //Convert the baseline into rems
+  //Print the first line in pixel values
+  $baseline-rem: $baseline-px / 1rem * 1; 
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  } 
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem / 2;
+  }
+  @else {
+    //Create an empty list that we can dump values into $rem-values:();
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, just append it
+      @if $value==0 or type-of($value) !="number" {
+        $rem-values: append($rem-values, $value);
+      }
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem / 2);
+      }
+    } 
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
