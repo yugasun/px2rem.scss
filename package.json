@@ -1,6 +1,6 @@
 {
   "name": "px2rem.scss",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "移动端屏幕自适应插件",
   "main": "px2rem.config.js",
   "scripts": {
