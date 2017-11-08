@@ -40,7 +40,7 @@ npm install px2rem.scss --save
 </head>
 ```
 
-> Notice：this plugin need calculate the html tag base `font-size` before dom rendering,otherwise web page will initial depend on  `font-size:16px` to calculate `rem` value,this will cause page to rerender and repain.
+> Notice: this plugin need calculate the html tag base `font-size` before dom rendering, otherwise web page will initial depend on `font-size:16px` to calculate `rem` value, this will cause page to rerender and repain.
 
 3. Before you use `mixins` in `px2rem.scss`, plz import firstly：
 
